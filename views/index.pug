@@ -3,6 +3,14 @@ html
   head
     link(rel="stylesheet" href="/static/site.bundle.css")
   body
-    p Hello
+    p
+      label Url: 
+      input(id="js-url")
+      label Interval: 
+      input(id="js-interval" type="number")
+    p
+      button(id="js-start") Start Test
+      button(id="js-stop") Stop Test
+    div(class="graph" id="js-graph")
     script(src="/static/commons.js")
     script(src="/static/site.bundle.js")
