@@ -39,9 +39,10 @@ io.on('connection', function (socket) {
     r = new skuldRequester(data.url, data.interval);
     r.start();
     console.log('start');
+    var refresh = data.interval < 20 ? 20 : data.interval;
     feedTimer = setInterval(function(){
       socket.emit('feed', r.currentFeed());
-    }, data.interval);
+    }, refresh);
   });
 
   socket.on('stop', function (data) {

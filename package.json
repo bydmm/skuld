@@ -1,6 +1,6 @@
 {
   "name": "skuld",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy Load Test",
   "main": "index.js",
   "scripts": {
