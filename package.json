@@ -1,10 +1,10 @@
 {
   "name": "skuld",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Easy Load Test",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "bin": {
+    "skuld": "./index.js"
   },
   "author": "Nathan Cheng",
   "license": "MIT",
